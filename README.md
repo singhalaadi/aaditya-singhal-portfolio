@@ -75,7 +75,7 @@ The website is fully responsive and works on:
 
 ## 🚀 Deployment
 
-The site is deployed using [Netlify]. You can visit it at [].
+The site is deployed using [Netlify](https://app.netlify.com/). You can visit it at [Click Here](https://aaditya-singhal-portfolio.netlify.app/).
 
 ## 📄 License
 
