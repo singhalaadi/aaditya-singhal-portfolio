@@ -1,0 +1,116 @@
+.coding-profiles {
+  padding: var(--section-padding);
+  background-color: var(--bg-color);
+}
+
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.profile-card {
+  background-color: var(--dark-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.profile-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.username {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.stats, .badges, .description {
+  font-weight: 500;
+  color: var(--text-color);
+  background-color: rgba(66, 133, 244, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.cert-title {
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.cert-card {
+  background-color: var(--dark-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.cert-card h4 {
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.cert-card p {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.cert-card .btn {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .profiles-grid,
+  .certs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .cert-title {
+    font-size: 1.75rem;
+    margin: 1.5rem 0;
+  }
+
+  .profile-card,
+  .cert-card {
+    padding: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .stats, .badges {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
