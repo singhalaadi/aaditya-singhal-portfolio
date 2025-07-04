@@ -2,10 +2,23 @@
 .hero {
   padding-top: 80px;
   padding-bottom: 60px;
-  background-color: var(--dark-bg);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
 }
 
 .hero-container {
@@ -13,6 +26,8 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
@@ -22,31 +37,70 @@
 
 .hero h2 {
   font-size: 1.5rem;
-  color: var(--primary-color);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .hero-name {
   font-size: 4rem;
   margin-bottom: 15px;
-  color: var(--text-color);
+  color: #ffffff;
+  font-weight: 800;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title {
   font-size: 1.8rem;
-  color: #777;
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .hero-description {
   font-size: 1.1rem;
   margin-bottom: 30px;
-  line-height: 1.6;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
 }
 
 .hero-buttons {
   display: flex;
   gap: 15px;
+}
+
+.hero-buttons .btn {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.hero-buttons .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-buttons .btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.hero-buttons .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
 }
 
 .hero-image {

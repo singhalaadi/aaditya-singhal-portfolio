@@ -1,6 +1,21 @@
 .coding-profiles {
   padding: var(--section-padding);
-  background-color: var(--bg-color);
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+}
+
+.coding-profiles::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23667eea" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+}
+
+.coding-profiles .section-title{
+  line-height: 1.3;
 }
 
 .profiles-grid {
@@ -8,27 +23,37 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
 }
 
 .profile-card {
-  background-color: var(--dark-bg);
+  background: rgba(255, 255, 255, 0.9);
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
-  transition: var(--transition);
-  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .profile-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-color: var(--primary-color);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: rgba(102, 126, 234, 0.3);
 }
 
 .profile-card h3 {
-  color: var(--primary-color);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1rem;
   font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 0.2rem 0;
 }
 
 .username {
@@ -38,19 +63,28 @@
 }
 
 .stats, .badges, .description {
-  font-weight: 500;
-  color: var(--text-color);
-  background-color: rgba(66, 133, 244, 0.1);
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  font-weight: 600;
+  color: #4a5568;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
   display: inline-block;
+  border: 1px solid rgba(102, 126, 234, 0.2);
 }
 
 .cert-title {
   text-align: center;
   margin: 2rem 0;
-  color: var(--primary-color);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  line-height: 1.4;
+  padding: 0.2rem 0;
 }
 
 .certs-grid {
@@ -60,34 +94,49 @@
 }
 
 .cert-card {
-  background-color: var(--dark-bg);
+  background: rgba(255, 255, 255, 0.9);
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
-  transition: var(--transition);
-  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .cert-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  border-color: rgba(102, 126, 234, 0.3);
 }
 
 .cert-card h4 {
   margin-bottom: 0.5rem;
-  color: var(--text-color);
+  color: #2d3748;
   font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .cert-card p {
-  color: #666;
+  color: #4a5568;
   margin-bottom: 1rem;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .cert-card .btn {
   margin-top: 0.5rem;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.cert-card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
 }
 
 @media screen and (max-width: 768px) {

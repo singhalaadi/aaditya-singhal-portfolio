@@ -17,7 +17,7 @@ const About = () => {
             />
           </div>
           <div className="about-text">
-            <h3>Hello, I'm Aaditya Singhal</h3>
+            <h3>Full Stack Developer & Problem Solver</h3>
             <p>
               A motivated and enthusiastic Computer Science undergraduate with a
               strong passion for Full Stack Web Development and AI/ML. Currently

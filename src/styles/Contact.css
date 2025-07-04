@@ -1,7 +1,22 @@
 /* Contact section */
 .contact {
   padding: var(--section-padding);
-  background-color: var(--dark-bg);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+}
+
+.contact .section-title {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 0.2rem 0;
+  text-shadow: none;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.contact .section-title::after {
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .contact-content {
@@ -9,13 +24,17 @@
   grid-template-columns: 1fr 2fr;
   gap: 40px;
   align-items: start;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-info {
-  background-color: var(--bg-color);
+  background: rgba(255, 255, 255, 0.95);
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-item {
@@ -25,19 +44,28 @@
 .contact-item h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: var(--primary-color);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
 }
 
 .contact-item p {
-  color: var(--text-color);
+  color: #4a5568;
+  font-weight: 500;
 }
 
 .contact-item a {
-  color: var(--text-color);
+  color: #4a5568;
+  font-weight: 500;
 }
 
 .contact-item a:hover {
-  color: var(--primary-color);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .social-links {
@@ -47,24 +75,29 @@
 }
 
 .social-link {
-  color: var(--primary-color);
-  font-weight: 500;
-  padding: 8px 16px;
-  border-radius: 20px;
-  background-color: var(--dark-bg);
-  transition: var(--transition);
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  color: #4a5568;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 126, 234, 0.2);
 }
 
 .social-link:hover {
-  background-color: var(--primary-color);
-  color: var(--light-text);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
 }
 
 .contact-form {
-  background-color: var(--bg-color);
+  background: rgba(255, 255, 255, 0.95);
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .form-group {
@@ -74,13 +107,15 @@
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 12px 15px;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
+  padding: 15px 18px;
+  border: 2px solid rgba(102, 126, 234, 0.1);
+  border-radius: 15px;
   font-family: inherit;
   font-size: 1rem;
-  transition: var(--transition);
-  background-color: var(--dark-bg);
+  transition: all 0.3s ease;
+  background: rgba(248, 250, 252, 0.8);
+  color: #2d3748;
+  font-weight: 500;
 }
 
 .form-group textarea {
@@ -91,8 +126,26 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--primary-color);
-  background-color: var(--bg-color);
+  border-color: #667eea;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.1);
+}
+
+.contact-form .btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.contact-form .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
 }
 
 @media screen and (max-width: 768px) {
