@@ -1,36 +1,36 @@
 import React from "react";
 import "../styles/Projects.css";
+import taskzyImage from "../assets/images/taskzy-home-page.png";
 import jobifyImage from "../assets/images/jobify-img.png";
-import drumImage from "../assets/images/drum-kit-img.png";
 import eventImage from "../assets/images/event-img.png";
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Jobify - Personal Job Application Management System",
+      title: "Taskzy - Personal Task Management Application",
       description:
-        "A fully functional frontend job application system built with React and Vite. Features dynamic routing, form handling, and state management via Context API. Designed with scalable architecture to support future backend integration.",
-      image: jobifyImage,
-      technologies: ["React.js", "Vite", "HTML5", "CSS3", "JavaScript"],
-      githubLink: "https://github.com/singhalaadi/job-board-react",
+        "A modern, full-stack task management application built with React, Node.js, Express, and MongoDB. Features user authentication, CRUD operations, sorting/filtering, priority levels, due date tracking, and real-time updates. Includes a responsive design with Chakra UI components.",
+      image: taskzyImage,
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Chakra UI", "JWT", "Mongoose"],
+      githubLink: "https://github.com/singhalaadi/taskzy-capstone-project",
+      demoLink: "https://taskzy-app.netlify.app/",
     },
     {
       id: 2,
-      title: "Drum Kit Simulator",
+      title: "Jobify - Job Board Application Tracker",
       description:
-        "An interactive browser-based drum kit that plays different drum sounds when corresponding keys are clicked or pressed. Built with HTML, CSS, and JavaScript, it also incorporates CSS transitions to animate the buttons for enhanced interactivity.",
-      image: drumImage,
-      technologies: ["HTML5", "CSS3", "JavaScript", "DOM Manipulation"],
-      githubLink: "https://github.com/singhalaadi/Drum-Kit",
-      demoLink: "https://beginner-drum-kit.netlify.app/",
+        "A comprehensive MERN stack job board application for tracking job applications. Features secure authentication with JWT, job CRUD operations, dashboard with statistics, user profiles, file uploads via Cloudinary, and modern UI with styled components.",
+      image: jobifyImage,
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary", "Styled Components"],
+      githubLink: "https://github.com/singhalaadi/job-board-mern",
     },
     {
       id: 3,
       title: "Event Management Platform",
       description:
-        "A responsive web-based event management application built with React.js. Users can explore event listings, view details, and simulate ticket purchases. Features clean UI and efficient component structuring.",
+        "A responsive web-based event management application built with React.js. Users can explore event listings, view details, simulate ticket purchases, and interact with seat selection. Features clean UI design, event navigation, and ticket counter functionality.",
       image: eventImage,
-      technologies: ["React.js", "HTML5", "CSS3", "JavaScript"],
+      technologies: ["React.js", "HTML5", "CSS3", "JavaScript", "React DOM"],
       githubLink: "https://github.com/singhalaadi/Event-Management-Platform",
     },
   ];

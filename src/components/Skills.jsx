@@ -4,8 +4,8 @@ import '../styles/Skills.css';
 const Skills = () => {
   const skillCategories = [
     {
-      category: "Languages",
-      skills: ["Java", "Python", "C++", "JavaScript", "HTML", "CSS", "MySQL"]
+      category: "Programming Languages",
+      skills: ["Java", "Python", "C++", "JavaScript", "HTML", "CSS"]
     },
     {
       category: "Frameworks & Libraries",
@@ -13,7 +13,7 @@ const Skills = () => {
     },
     {
       category: "Developer Tools",
-      skills: ["Git", "GitHub", "VS Code", "Chrome Developer Tools"]
+      skills: ["Git", "GitHub", "VS Code", "Postman", "MongoDB"]
     },
     {
       category: "Soft Skills",
