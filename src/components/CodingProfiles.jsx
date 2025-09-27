@@ -7,13 +7,13 @@ const CodingProfiles = () => {
       platform: "LeetCode",
       username: "aadisinghal",
       link: "https://leetcode.com/aadisinghal",
-      stats: "250+ Problems Solved"
+      stats: "300+ Problems Solved"
     },
     {
       platform: "GeeksforGeeks",
       username: "singhal26aadi",
       link: "https://www.geeksforgeeks.org/user/singhal26aadi/",
-      stats: "150+ Problems Solved"
+      stats: "200+ Problems Solved"
     },
     {
       platform: "HackerRank",

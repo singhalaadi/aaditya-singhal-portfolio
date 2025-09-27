@@ -68,7 +68,7 @@ const Contact = () => {
                 GitHub
               </a>
               <a 
-                href="https://www.instagram.com/its_aadi_singhal" 
+                href="https://www.instagram.com/_aaditya_singhal" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="social-link"
