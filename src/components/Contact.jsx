@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
 const Contact = () => {
@@ -8,6 +9,8 @@ const Contact = () => {
     subject: '',
     message: '',
   });
+
+  const [status, setStatus] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,14 +22,34 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
+    setStatus('sending');
+
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'singhal26aaditya@gmail.com',
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+        setStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error.text);
+        setStatus('error');
+      });
   };
 
   return (
@@ -123,7 +146,12 @@ const Contact = () => {
                 ></textarea>
               </div>
               
-              <button type="submit" className="btn btn-primary">Send Message</button>
+              <button type="submit" className="btn btn-primary" disabled={status === 'sending'}>
+                {status === 'sending' ? 'Sending...' : 'Send Message'}
+              </button>
+              
+              {status === 'success' && <p className="status-message success">Message sent successfully!</p>}
+              {status === 'error' && <p className="status-message error">Failed to send message. Please try again.</p>}
             </form>
           </div>
         </div>

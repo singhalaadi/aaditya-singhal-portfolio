@@ -17,12 +17,12 @@ const About = () => {
             />
           </div>
           <div className="about-text">
-            <h3>Full Stack Developer & Problem Solver</h3>
+            <h3>Full Stack Web Developer (MERN) & Problem Solver</h3>
             <p>
               A motivated and enthusiastic Computer Science undergraduate with a
               strong passion for Full Stack Web Development and AI/ML. Currently
               pursuing B.Tech in Computer Science at Sharda University with a
-              CGPA of 8.46.
+              CGPA of 8.48.
             </p>
             <p>
               I'm skilled in building scalable, responsive web applications and
@@ -51,7 +51,7 @@ const About = () => {
               <div className="detail-item">
                 <span className="detail-title">Availability:</span>
                 <span className="detail-info">
-                  Available for Remote Internship
+                  Available for Internship and Full Time Role.
                 </span>
               </div>
             </div>

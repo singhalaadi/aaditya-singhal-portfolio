@@ -2,11 +2,21 @@ import React from "react";
 import "../styles/Projects.css";
 import taskzyImage from "../assets/images/taskzy-home-page.png";
 import jobifyImage from "../assets/images/jobify-img.png";
-import eventImage from "../assets/images/event-img.png";
+import memefyImage from "../assets/images/memefy-img.png";
 const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "Memefy AI- Meme Generator",
+      description:
+        "AI-powered meme generator that combines Gemini AI with the ImgFlip API to help users create, customize, and share memes. Pick from popular templates or upload your own image, get smart caption suggestions from Gemini, adjust text styling and placement, and download or share the result. Created memes and favorites are persisted with Firebase. Built with React.js and Tailwind CSS for a responsive, fast UI.",
+      image: memefyImage,
+      technologies: ["React.js", "Tailwind CSS", "Firebase", "Gemini AI", "ImgFlip API"],
+      githubLink: "https://github.com/singhalaadi/memefy-ai",
+      demoLink: "https://memefy-ai.netlify.app/",
+    },
+    {
+      id: 2,
       title: "Taskzy - Personal Task Management Application",
       description:
         "A modern, full-stack task management application built with React, Node.js, Express, and MongoDB. Features user authentication, CRUD operations, sorting/filtering, priority levels, due date tracking, and real-time updates. Includes a responsive design with Chakra UI components.",
@@ -16,22 +26,13 @@ const Projects = () => {
       demoLink: "https://taskzy-app.netlify.app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Jobify - Job Board Application Tracker",
       description:
         "A comprehensive MERN stack job board application for tracking job applications. Features secure authentication with JWT, job CRUD operations, dashboard with statistics, user profiles, file uploads via Cloudinary, and modern UI with styled components.",
       image: jobifyImage,
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary", "Styled Components"],
       githubLink: "https://github.com/singhalaadi/job-board-mern",
-    },
-    {
-      id: 3,
-      title: "Event Management Platform",
-      description:
-        "A responsive web-based event management application built with React.js. Users can explore event listings, view details, simulate ticket purchases, and interact with seat selection. Features clean UI design, event navigation, and ticket counter functionality.",
-      image: eventImage,
-      technologies: ["React.js", "HTML5", "CSS3", "JavaScript", "React DOM"],
-      githubLink: "https://github.com/singhalaadi/Event-Management-Platform",
     },
   ];
 

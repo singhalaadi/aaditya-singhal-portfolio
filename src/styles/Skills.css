@@ -22,6 +22,10 @@
   z-index: 1;
 }
 
+.skills-container h2 {
+  line-height: 3.2rem;
+}
+
 .section-title {
   text-align: center;
   margin-bottom: 50px;

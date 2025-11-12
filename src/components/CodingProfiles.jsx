@@ -7,13 +7,13 @@ const CodingProfiles = () => {
       platform: "LeetCode",
       username: "aadisinghal",
       link: "https://leetcode.com/aadisinghal",
-      stats: "300+ Problems Solved"
+      stats: "350+ Problems Solved"
     },
     {
       platform: "GeeksforGeeks",
       username: "singhal26aadi",
       link: "https://www.geeksforgeeks.org/user/singhal26aadi/",
-      stats: "200+ Problems Solved"
+      stats: "250+ Problems Solved"
     },
     {
       platform: "HackerRank",
@@ -31,6 +31,12 @@ const CodingProfiles = () => {
 
   const certificates = [
     {
+      name: "OCI 2025 Certified AI Foundations Associate",
+      issuer: "Oracle",
+      date: "October 2025 - October 2027",
+      link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=DD6C3D9761B49BFD242D2F4ACB62629591CCA24C885A467D8E334EC6A1191946"
+    },
+    {
       name: "Google Analytics Certification",
       issuer: "Google Skillshop",
       date: "April 2025 - April 2026",
@@ -39,31 +45,37 @@ const CodingProfiles = () => {
     {
       name: "6th Technovation Hackathon Participation",
       issuer: "Sharda University",
-      date: "Jan 2025",
+      date: "January 2025",
       link: "https://drive.google.com/file/d/1XPP8fj0lcvAhsNreJ7jbnA2nFRo6OTAO/view?usp=drive_link"
     },
     {
       name: "Python (Basic)",
       issuer: "HackerRank",
-      date: "Jan 2025",
+      date: "January 2025",
       link: "https://www.hackerrank.com/certificates/c68771192ae4"
     },
     {
+      name: "Database Foundation Course Completion",
+      issuer: "Oracle Academy",
+      date: "October 2024",
+      link: "https://drive.google.com/file/d/1UVFjZMSPCtgUCuvCEJnOUXXVjve0d_Ks/view"
+    },
+    {
       name: "Java Fundamentals Course Completion",
-      issuer: "Orace Academy",
-      date: "Mar 2024",
+      issuer: "Oracle Academy",
+      date: "March 2024",
       link: "https://drive.google.com/file/d/1lD_aK9XaPjqK4xafIdnXfOiJBdRzjjC7/view"
     },
     {
       name: "Java (Basic)",
       issuer: "HackerRank",
-      date: "Nov 2023",
+      date: "November 2023",
       link: "https://drive.google.com/file/d/1c36CXC78Xey_d3daKEHKhGkKSOP4BdM1/view"
     },
     {
       name: "The Complete 2023 Web Development Bootcamp",
       issuer: "Udemy",
-      date: "Sept 2023",
+      date: "September 2023",
       link: "https://www.udemy.com/certificate/UC-59ce3a99-485a-4c0b-8ff9-829b2457488d/"
     }
   ];
